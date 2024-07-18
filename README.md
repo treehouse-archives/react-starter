@@ -20,7 +20,7 @@ This template provides a foundational structure for building a modern and effici
 ## Project Structure
 
 ```bash
-/react-vite-starter-template
+/react-starter
 |-- /public             # Public assets
 |-- /src
 |   |-- /components     # Reusable components
