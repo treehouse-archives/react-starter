@@ -1,8 +1,8 @@
-import usePageTitle from '@/hooks/usePageTitle';
+import useTitle from '@/hooks/useTitle.js';
 import { useState } from 'react';
 
 const Home = () => {
-  usePageTitle('Home | Starter Template');
+  useTitle('Home | Starter Template');
 
   const [count, setCount] = useState(0);
 

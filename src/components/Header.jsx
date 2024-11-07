@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <div className='p-6 flex-between'>
-        <ul className='flex-between space-x-4'>
+        <ul className='flex-between space-x-5'>
           <li className='font-medium text-lg font-mono dark:text-slate-200 text-slate-700'>
             <Link to={'/'}>Home</Link>
           </li>

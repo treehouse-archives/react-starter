@@ -1,7 +1,8 @@
-import usePageTitle from '@/hooks/usePageTitle';
+import usePageTitle from '@/hooks/useTitle.js';
+import useTitle from "@/hooks/useTitle.js";
 
 const NotFound = () => {
-  usePageTitle('Page not found!');
+  useTitle('Page not found!');
 
   return (
     <section>

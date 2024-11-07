@@ -1,7 +1,7 @@
-import usePageTitle from '@/hooks/usePageTitle';
+import useTitle from '@/hooks/useTitle.js';
 
 function About() {
-  usePageTitle('Home | Starter Template');
+  useTitle('Home | Starter Template');
 
   return (
     <section>
