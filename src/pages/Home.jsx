@@ -11,8 +11,7 @@ const Home = () => {
       <h1 className="font-medium text-3xl sm:text-4xl font-mono dark:text-slate-200 text-slate-700">
         React Stater Template
       </h1>
-      <img src={reactIcon} alt="react-icon" className="size-80 md:size-96" />
-
+      <img src={reactIcon} alt="react-icon" className="react-icon" />
       <button className="btn-primary" onClick={() => setCount((prev) => prev + 1)}>
         Count: {count}
       </button>
