@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --color-primary: "#6dd9f5",
+}
+
+@layer base {
+  @import "./common/base.css";
+}
+
+@layer utilities {
+  @import "./common/utils.css";
+}
+
+@layer components {
+  @import "./components/header.css";
+  @import "./components/button.css";
+  @import "./components/react-icon.css";
+}

@@ -1,4 +1,4 @@
-import useTitle from "@/hooks/useTitle.js";
+import useTitle from "@/hooks/useTitle.ts";
 import reactIcon from "@/assets/images/react.svg";
 import { useState } from "react";
 
@@ -12,7 +12,10 @@ const Home = () => {
         React Stater Template
       </h1>
       <img src={reactIcon} alt="react-icon" className="react-icon" />
-      <button className="btn-primary" onClick={() => setCount((prev) => prev + 1)}>
+      <button
+        className="btn btn-primary"
+        onClick={() => setCount((prev) => prev + 1)}
+      >
         Count: {count}
       </button>
     </section>

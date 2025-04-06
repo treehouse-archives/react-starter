@@ -1,13 +1,17 @@
-import useTitle from "@/hooks/useTitle.js";
+import useTitle from "@/hooks/useTitle.ts";
 
 function About() {
-  useTitle("Home | React Starter Template");
+  useTitle("About | React Starter Template");
 
   return (
     <section>
       <div className="space-y-5 md:space-y-8">
         <div className="grid md:grid-cols-3 gap-5">
-          <img src="/src/assets/images/react.svg" alt="react-icon" className="size-20" />
+          <img
+            src="/src/assets/images/react.svg"
+            alt="react-icon"
+            className="size-20"
+          />
           <h1 className="font-medium text-3xl sm:text-4xl font-mono dark:text-slate-200 text-slate-700 col-span-2">
             React Vite <br />
             Stater Template

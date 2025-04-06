@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ThemeToggler from "./ThemeToggler.jsx";
+import ThemeToggler from "./ThemeToggler.tsx";
 
 const Header = () => {
   return (

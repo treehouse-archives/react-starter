@@ -1,9 +1,13 @@
 import BaseLayout from "@/layout/BaseLayout";
 
-import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-import Home from "@/pages/Home.jsx";
-import About from "@/pages/About.jsx";
-import NotFound from "@/pages/NotFound.jsx";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Home from "@/pages/Home.tsx";
+import About from "@/pages/About.tsx";
+import NotFound from "@/pages/NotFound.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,8 +17,8 @@ const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-    </>,
-  ),
+    </>
+  )
 );
 
 export default router;

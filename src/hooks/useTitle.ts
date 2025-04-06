@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const useTitle = (title) => {
+const useTitle = (title: string) => {
   const location = useLocation();
 
   useEffect(() => {

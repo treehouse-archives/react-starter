@@ -1,6 +1,6 @@
-import Header from '@/components/Header';
-import { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import Header from "@/components/Header";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
   const location = useLocation();
@@ -11,9 +11,9 @@ const Layout = () => {
 
   return (
     <>
-      <main className='size-full min-h-screen'>
+      <main className="size-full min-h-screen">
         <Header />
-        <div className='py-14 max-w-2xl space-y-5 md:space-y-7 px-5 mx-auto'>
+        <div className="py-14 max-w-2xl space-y-5 md:space-y-7 px-5 mx-auto">
           <Outlet />
         </div>
       </main>
