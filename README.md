@@ -1,4 +1,4 @@
-# React Vite Starter Template
+# React Starter Template
 
 This template provides a foundational structure for building a modern and efficient React application using Vite. It's
 designed to help you quickly set up a scalable and maintainable frontend with React, TailwindCSS for styling, and React
