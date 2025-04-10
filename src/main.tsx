@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 import { Provider } from "react-redux";
-import store from "@/lib/store/store.ts";
+import store from "@/lib/store";
 
 if (import.meta.env.VITE_NODE_ENV === "production") {
   disableReactDevTools();

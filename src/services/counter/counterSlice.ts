@@ -1,4 +1,4 @@
-import { type RootState } from "@/lib/store/store";
+import { type RootState } from "@/lib/store";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface CounterState {

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, selectCount } from "@/services/counter/counterSlice";
 
 const Home = () => {
-  useTitle("Home | React Starter Template");
+  useTitle("Home");
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
 

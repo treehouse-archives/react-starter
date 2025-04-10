@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import useTitle from "@/lib/hooks/useTitle.ts";
 
 function About() {
-  useTitle("About | React Starter Template");
+  useTitle("About");
 
   return (
     <section>
@@ -29,7 +29,7 @@ function About() {
 
         <Button>
           <a
-            href="https://github.com/the-testing-oak/react-starter"
+            href="https://github.com/treehouse-archives/react-starter"
             target="_blank"
           >
             Source Code

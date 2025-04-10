@@ -5,7 +5,7 @@ const useTitle = (title: string) => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = title.trim();
+    document.title = title.trim() + " | React Starter Template";
   }, [location, title]);
 };
 
