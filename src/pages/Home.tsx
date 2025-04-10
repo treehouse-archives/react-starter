@@ -1,11 +1,13 @@
 import useTitle from "@/lib/hooks/useTitle.ts";
 import reactIcon from "@/assets/images/react.svg";
-import { useState } from "react";
 import Button from "@/components/ui/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { increment, selectCount } from "@/services/counter/counterSlice";
 
 const Home = () => {
   useTitle("Home | React Starter Template");
-  const [count, setCount] = useState(0);
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
 
   return (
     <section className="space-y-5 md:space-y-10 text-center flex-center flex-col">
@@ -13,7 +15,7 @@ const Home = () => {
         React Stater Template
       </h1>
       <img src={reactIcon} alt="react-icon" className="react-icon" />
-      <Button varient="primary" onClick={() => setCount((prev) => prev + 1)}>
+      <Button varient="primary" onClick={() => dispatch(increment())}>
         Count: {count}
       </Button>
     </section>
