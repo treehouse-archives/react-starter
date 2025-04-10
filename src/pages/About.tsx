@@ -1,19 +1,20 @@
-import useTitle from "@/hooks/useTitle.ts";
+import Button from "@/components/ui/Button";
+import useTitle from "@/lib/hooks/useTitle.ts";
 
 function About() {
   useTitle("About | React Starter Template");
 
   return (
     <section>
-      <div className="space-y-5 md:space-y-8">
-        <div className="grid md:grid-cols-3 gap-5">
+      <div className="space-y-4 md:space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-8 gap-y-2 place-items-center">
           <img
             src="/src/assets/images/react.svg"
             alt="react-icon"
-            className="size-20"
+            className="size-36 md:size-full"
           />
-          <h1 className="font-medium text-3xl sm:text-4xl font-mono dark:text-slate-200 text-slate-700 col-span-2">
-            React Vite <br />
+          <h1 className="col-span-2 font-medium text-3xl sm:text-4xl font-mono dark:text-slate-200 text-slate-700 text-center md:text-left">
+            React Vite <br className="hidden md:block" />
             Stater Template
           </h1>
         </div>
@@ -25,6 +26,15 @@ function About() {
           TailwindCSS for styling, and React Router for navigation. It also
           includes a theme toggle functionality for an enhanced user experience.
         </p>
+
+        <Button>
+          <a
+            href="https://github.com/the-testing-oak/react-starter"
+            target="_blank"
+          >
+            Source Code
+          </a>
+        </Button>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
-import useTitle from "@/hooks/useTitle.ts";
+import useTitle from "@/lib/hooks/useTitle.ts";
 import reactIcon from "@/assets/images/react.svg";
 import { useState } from "react";
+import Button from "@/components/ui/Button";
 
 const Home = () => {
   useTitle("Home | React Starter Template");
@@ -12,12 +13,9 @@ const Home = () => {
         React Stater Template
       </h1>
       <img src={reactIcon} alt="react-icon" className="react-icon" />
-      <button
-        className="btn btn-primary"
-        onClick={() => setCount((prev) => prev + 1)}
-      >
+      <Button varient="primary" onClick={() => setCount((prev) => prev + 1)}>
         Count: {count}
-      </button>
+      </Button>
     </section>
   );
 };

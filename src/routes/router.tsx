@@ -1,4 +1,4 @@
-import BaseLayout from "@/layout/BaseLayout";
+import BaseLayout from "@/layouts/BaseLayout";
 
 import {
   createBrowserRouter,

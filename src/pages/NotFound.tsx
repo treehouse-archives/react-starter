@@ -1,4 +1,4 @@
-import useTitle from "@/hooks/useTitle.ts";
+import useTitle from "@/lib/hooks/useTitle.ts";
 
 const NotFound = () => {
   useTitle("404 | Page not found!");
