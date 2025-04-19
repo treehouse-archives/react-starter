@@ -15,7 +15,7 @@ const Home = () => {
         React Stater Template
       </h1>
       <img src={reactIcon} alt="react-icon" className="react-icon" />
-      <Button varient="primary" onClick={() => dispatch(increment())}>
+      <Button variant="primary" onClick={() => dispatch(increment())}>
         Count: {count}
       </Button>
     </section>
